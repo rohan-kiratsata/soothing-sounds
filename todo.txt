@@ -1,10 +1,10 @@
-Birds
-Seagull
-Ocean Waves
-Rain
-Crickets
-Thunderstorm
-Winds
+Birds -
+Seagull 1
+Ocean Waves 1
+Rain 1
+Crickets 
+Thunderstorm 1
+Winds 1
 Coffee Shop
 Camp Fire
 Keyboard

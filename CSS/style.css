@@ -3,17 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
 
 body {
-  background: linear-gradient(-45deg, #06688b, #046c92, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg,  #23a6d5, #23d5ab);
 
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
-  height: 100vh;
+  /* animation: gradient 8s ease infinite; */
+  /* height: 100vh; */
   font-family: "Poppins", sans-serif;
 }
 header {
   text-align: center;
   padding: 10px;
-  color: #eee;
+  /* color: #eee; */
   font-size: 3vw;
 }
 header h1 {
@@ -30,23 +30,23 @@ header h4 {
   padding: 20px;
   font-size: 18px;
   font-weight: 400;
-    color: #fff;
+  /* color: #fff; */
 }
 
 .sounds-container {
   margin-top: 40px;
-  color: #fff;
+  /* color: #fff; */
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 400;
   /* background-color: yellowgreen; */
 }
-.sounds-row{
-    padding: auto;
-    /* background-color: blue; */
+.sounds-row {
+  padding: auto;
+  /* background-color: blue; */
 }
 .sound-icon {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.);
+  background: rgba(200, 200, 200, .4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -57,6 +57,11 @@ header h4 {
 }
 .sound-icon img {
   width: 100px;
+}
+button{
+  background-color: transparent;
+  border: none;
+  margin: 10px;
 }
 
 /* Gradient Keyframes */
@@ -73,8 +78,7 @@ header h4 {
 }
 
 @media screen and (max-width: 576px) {
-    
-    .sound-icon{
-        margin: 8px;
-    }
+  .sound-icon {
+    margin: 8px;
+  }
 }
