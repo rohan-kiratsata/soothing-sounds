@@ -1,3 +1,3 @@
 # soothing-sounds
 
-Soothing Sounds is a website which has ambient sounds to relax and release stress.
+Soothing Sounds is a website which has various ambient sounds to relax and release stress.
