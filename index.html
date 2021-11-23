@@ -22,10 +22,14 @@
         <h4>Ambient sounds to relax and release stress.</h4>
     </header>
     <div class="container info-container">
-        <span>1. Click on icons to listen sounds. <br>
-            2. Try mixing one or more sounds and enjoy!</span>
+        <span>
+            1. Click on icons to listen sounds.<br>
+            2. Try mixing one or more sounds.<br>
+            (Use &#127911; for best experience)
+        </span>
     </div>
     <div class="container sounds-container">
+        <!-- Row 1 -->
         <div class="row sounds-row justify-content-center">
 
             <!-- OCEAN WAVE -->
@@ -55,7 +59,7 @@
                 <br>
                 <span>Birds</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5"
+                <input type="range" name="" id="bird-vol" min="0.0" max="1" value="0.5"
                     onchange="changeVol(this.value, bird)" step="0.1">
             </div>
 
@@ -70,21 +74,21 @@
                 <br>
                 <span>Rain</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, rain)">
+                <input type="range" name="" id="rain-vol" min="0.0" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, rain)">
             </div>
 
             <!-- THUNDERSTORM -->
             <div class="col-auto sound-icon">
                 <button onclick="play(thunder);">
                     <audio id="thunder-aud">
-                        <source src="audio/rain.mp3" type="audio/mp3">
+                        <source src="audio/thunder.mp3" type="audio/mp3">
                     </audio>
                     <img src="Images/storm.png" alt="">
                 </button>
                 <br>
                 <span>Thunderstorm</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, thunder);">
+                <input type="range" name="" id="storm-vol" min="0.0" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, thunder);">
             </div>
         </div>
 
@@ -102,43 +106,49 @@
                 <br>
                 <span>Wind</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, wind);">
+                <input type="range" name="" id="wind-vol" min="0.0" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, wind);">
             </div>
 
             <!-- SEAGULL -->
             <div class="col-auto sound-icon">
                 <button onclick="play(seagull)">
                     <audio id="seagull-aud">
-                        <source src="audio/seagull.mp3" type="audio/mp3">
+                        <source src="audio/seagull.wav" type="audio/mp3">
                     </audio>
                     <img src="Images/seagull.png" alt="">
                 </button>
                 <br>
                 <span>Seagull</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, seagull);">
+                <input type="range" name="" id="seagull-vol" min="0.0" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, seagull);">
             </div>
 
             <!-- CRICKET -->
             <div class="col-auto sound-icon">
-                <button onclick="play(cricket)">
+                <button onclick="play(crickets)">
+                    <audio id="cricket-aud">
+                        <source src="audio/crickets.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/cricket.png" alt="">
                 </button>
                 <br>
                 <span>Crickets</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="cricket-vol" min="0.0" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, crickets);">
             </div>
 
             <!-- COFFEE SHOP -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(coffee);">
+                    <audio id="coffee-aud">
+                        <source src="audio/coffee.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/coffee-cup.png" alt="">
                 </button>
                 <br>
                 <span>Coffee Shop</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.0" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, coffee);">
             </div>
         </div>
 
@@ -147,48 +157,64 @@
 
             <!-- CAMP FIRE -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(coffee);">
+                    <audio id="fire-aud">
+                        <source src="audio/campfire.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/bonfire.png" alt="">
                 </button>
                 <br>
                 <span>Camp Fire</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="campfire-vol" min="0.0" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, campfire);">
             </div>
 
             <!-- KEYBOARD -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(keyboard)">
+                    <audio id="keyboard-aud">
+                        <source src="audio/keyboard.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/keyboard.png" alt="">
                 </button>
                 <br>
                 <span>Keyboard</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="keyboard-vol" min="0.0" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, keyboard);">
             </div>
 
             <!-- WATERFALL -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(waterfall);">
+                    <audio id="waterfall-aud">
+                        <source src="audio/waterfall.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/waterfall.png" alt="">
                 </button>
                 <br>
                 <span>Waterfall</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="waterfall-vol" min="0.0" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, waterfall);">
             </div>
 
             <!-- MEDITATION -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(meditate);">
+                    <audio id="meditate-aud">
+                        <source src="audio/meditation.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/meditation.png" alt="">
                 </button>
                 <br>
-                <span>Meditation</span>
+                <span>Tibetan Bowl</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="storm-vol" min="0.0" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, meditate);">
             </div>
         </div>
+    </div>
+    <div class="container">
+        <p align="center" style="margin: 20px;">Made with &#x2764;&#xfe0f; by <a href="rohan-kiratsata.github.io" id="site-link">Rohan Kiratsata</a></p>
+        <p align="center">You might also like : <a href="spend-ambani-fortune.fun" id="site-link">Spend Ambani Fortune</a> and <a href="https://rohan-kiratsata.github.io/random-quote-generator-js/" id="site-link">Inspirational Quotes</a></p>
     </div>
     <!-- JS -->
     <script src="js/main.js"></script>

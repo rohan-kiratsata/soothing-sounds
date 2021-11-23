@@ -63,6 +63,14 @@ button{
   border: none;
   margin: 10px;
 }
+#site-link{
+  color: rgb(17, 0, 252);
+  text-decoration: none;
+}
+#site-link:hover{
+  text-decoration: underline;
+}
+
 
 /* Gradient Keyframes */
 @keyframes gradient {
