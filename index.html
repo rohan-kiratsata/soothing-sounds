@@ -27,65 +27,101 @@
     </div>
     <div class="container sounds-container">
         <div class="row sounds-row justify-content-center">
+
+            <!-- OCEAN WAVE -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(ocean);">
+                    <audio id="ocean-aud">
+                        <source src='audio/oceanWave.mp3' type='audio/mp3' />
+                    </audio>
                     <img src="Images/wave.png" alt="">
                 </button>
                 <br>
                 <span>Ocean Wave</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.0" max="1" value="0.5"
+                    onchange="changeVol(this.value, ocean)" step="0.1">
             </div>
+
+            <!-- BIRD -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(bird);">
+                    <audio id="bird-aud">
+                        <source src='audio/birds.mp3' type='audio/mp3' />
+                    </audio>
                     <img src="Images/bird.png" alt="">
                 </button>
+
                 <br>
                 <span>Birds</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5"
+                    onchange="changeVol(this.value, bird)" step="0.1">
             </div>
+
+            <!-- RAIN -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(rain);">
+                    <audio id="rain-aud">
+                        <source src="audio/rain.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/rain.png" alt="">
                 </button>
                 <br>
                 <span>Rain</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, rain)">
             </div>
+
+            <!-- THUNDERSTORM -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(thunder);">
+                    <audio id="thunder-aud">
+                        <source src="audio/rain.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/storm.png" alt="">
                 </button>
                 <br>
                 <span>Thunderstorm</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step='0.1' onchange="changeVol(this.value, thunder);">
             </div>
         </div>
+
         <!-- Row 2 -->
         <div class="row sounds-row justify-content-center">
+
+            <!-- WIND -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(wind);">
+                    <audio id="wind-aud">
+                        <source src="audio/wind.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/wind (2).png" alt="" id="wind-ico">
                 </button>
                 <br>
                 <span>Wind</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, wind);">
             </div>
+
+            <!-- SEAGULL -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(seagull)">
+                    <audio id="seagull-aud">
+                        <source src="audio/seagull.mp3" type="audio/mp3">
+                    </audio>
                     <img src="Images/seagull.png" alt="">
                 </button>
                 <br>
                 <span>Seagull</span>
                 <br>
-                <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
+                <input type="range" name="" id="wave-vol" min="0.1" max="1" value="0.5" step="0.1" onchange="changeVol(this.value, seagull);">
             </div>
+
+            <!-- CRICKET -->
             <div class="col-auto sound-icon">
-                <button>
+                <button onclick="play(cricket)">
                     <img src="Images/cricket.png" alt="">
                 </button>
                 <br>
@@ -93,6 +129,8 @@
                 <br>
                 <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
             </div>
+
+            <!-- COFFEE SHOP -->
             <div class="col-auto sound-icon">
                 <button>
                     <img src="Images/coffee-cup.png" alt="">
@@ -103,8 +141,11 @@
                 <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
             </div>
         </div>
+
         <!-- Row 3 -->
         <div class="row sounds-row justify-content-center">
+
+            <!-- CAMP FIRE -->
             <div class="col-auto sound-icon">
                 <button>
                     <img src="Images/bonfire.png" alt="">
@@ -114,6 +155,8 @@
                 <br>
                 <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
             </div>
+
+            <!-- KEYBOARD -->
             <div class="col-auto sound-icon">
                 <button>
                     <img src="Images/keyboard.png" alt="">
@@ -123,6 +166,8 @@
                 <br>
                 <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
             </div>
+
+            <!-- WATERFALL -->
             <div class="col-auto sound-icon">
                 <button>
                     <img src="Images/waterfall.png" alt="">
@@ -132,6 +177,8 @@
                 <br>
                 <input type="range" name="" id="wave-vol" min="0" max="100" value="50">
             </div>
+
+            <!-- MEDITATION -->
             <div class="col-auto sound-icon">
                 <button>
                     <img src="Images/meditation.png" alt="">
@@ -143,6 +190,8 @@
             </div>
         </div>
     </div>
+    <!-- JS -->
+    <script src="js/main.js"></script>
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
