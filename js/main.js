@@ -28,3 +28,8 @@ function changeVol(volumeAmount, audioElem){
     audObj = audioElem;
     audObj.volume = volumeAmount;
 }
+
+
+function changeIcon(){
+    document.getElementById("playPause").onclick.innerHTML = "<i class='fas fa-pause'></i>";
+}
