@@ -1,28 +1,3 @@
-// var ocean = new Audio('audio/oceanWave.mp3')
-
-
-// var isPlaying = false;
-
-// function play(audioFile){
-//     var audio = audioFile;
-//     audio.play();
-// }
-
-// function stop(audioFile){
-//     var stopAudio = audioFile;
-//     stopAudio.stop();
-//     isPlaying = false;
-// }
-
-// function togglePlay(audioFile){
-//     audio = audioFile;
-//     if(isPlaying == false){
-//         function play(audio);
-//     }
-//     else{
-//         function stop(audio);
-//     }
-// }
 var ocean = document.getElementById("ocean-aud");
 var bird = document.getElementById("bird-aud");
 var rain = document.getElementById("rain-aud");

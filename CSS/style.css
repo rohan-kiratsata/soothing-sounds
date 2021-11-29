@@ -70,7 +70,9 @@ button{
 #site-link:hover{
   text-decoration: underline;
 }
-
+#credit-id{
+  text-align: center;
+}
 
 /* Gradient Keyframes */
 @keyframes gradient {
