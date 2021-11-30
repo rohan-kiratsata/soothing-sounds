@@ -30,6 +30,6 @@ function changeVol(volumeAmount, audioElem){
 }
 
 
-function changeIcon(){
-    document.getElementById("playPause").onclick.innerHTML = "<i class='fas fa-pause'></i>";
-}
+$("#play-btn").click(function() {
+    $(this).find('img').toggle();
+});​

@@ -74,6 +74,12 @@ button{
   text-align: center;
 }
 
+.play-btn{
+  background-color: red;
+  margin: 0;
+  text-align: center;
+}
+
 /* Gradient Keyframes */
 @keyframes gradient {
   0% {
