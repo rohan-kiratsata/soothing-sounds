@@ -28,8 +28,3 @@ function changeVol(volumeAmount, audioElem){
     audObj = audioElem;
     audObj.volume = volumeAmount;
 }
-
-
-$("#play-btn").click(function() {
-    $(this).find('img').toggle();
-});​
