@@ -13,7 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/button.scss">
+    <link rel="shortcut icon" href="Images/favicon_io/favicon.ico" type="image/x-icon">
 
     <!-- Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/65945f4f5e.js" crossorigin="anonymous"></script>
@@ -36,7 +36,9 @@
         <div class="row sounds-row justify-content-center">
 
             <!-- OCEAN WAVE -->
-            <div class="col-auto sound-icon">
+            <!-- !TESTING -->
+            <!-- TODO Change Card Bg color on click -->
+            <div class="col-auto sound-icon" id="ocean-card">
                 <button onclick="play(ocean);">
                     <audio id="ocean-aud">
                         <source src='audio/oceanWave.mp3' type='audio/mp3' />
@@ -51,7 +53,7 @@
             </div>
 
             <!-- BIRD -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="bird-card">
                 <button onclick="play(bird);">
                     <audio id="bird-aud">
                         <source src='audio/birds.mp3' type='audio/mp3' />
@@ -67,7 +69,7 @@
             </div>
 
             <!-- RAIN -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="rain-card">
                 <button onclick="play(rain);">
                     <audio id="rain-aud">
                         <source src="audio/rain.mp3" type="audio/mp3">
@@ -82,7 +84,7 @@
             </div>
 
             <!-- THUNDERSTORM -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="thunder-card">
                 <button onclick="play(thunder);">
                     <audio id="thunder-aud">
                         <source src="audio/thunder.mp3" type="audio/mp3">
@@ -101,7 +103,7 @@
         <div class="row sounds-row justify-content-center">
 
             <!-- WIND -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="wind-card">
                 <button onclick="play(wind);">
                     <audio id="wind-aud">
                         <source src="audio/wind.mp3" type="audio/mp3">
@@ -116,7 +118,7 @@
             </div>
 
             <!-- SEAGULL -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="seagull-card">
                 <button onclick="play(seagull)">
                     <audio id="seagull-aud">
                         <source src="audio/seagull.wav" type="audio/mp3">
@@ -131,7 +133,7 @@
             </div>
 
             <!-- CRICKET -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="cricket-card">
                 <button onclick="play(crickets)">
                     <audio id="cricket-aud">
                         <source src="audio/crickets.mp3" type="audio/mp3">
@@ -146,7 +148,7 @@
             </div>
 
             <!-- COFFEE SHOP -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon id="coffee-card"">
                 <button onclick="play(coffee);">
                     <audio id="coffee-aud">
                         <source src="audio/coffee.mp3" type="audio/mp3">
@@ -165,8 +167,8 @@
         <div class="row sounds-row justify-content-center">
 
             <!-- CAMP FIRE -->
-            <div class="col-auto sound-icon">
-                <button onclick="play(coffee);">
+            <div class="col-auto sound-icon" id="camp-card">
+                <button onclick="play(campfire);">
                     <audio id="fire-aud">
                         <source src="audio/campfire.mp3" type="audio/mp3">
                     </audio>
@@ -180,7 +182,7 @@
             </div>
 
             <!-- KEYBOARD -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="keyboard-card">
                 <button onclick="play(keyboard)">
                     <audio id="keyboard-aud">
                         <source src="audio/keyboard.mp3" type="audio/mp3">
@@ -195,7 +197,7 @@
             </div>
 
             <!-- WATERFALL -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="waterfall-card">
                 <button onclick="play(waterfall);">
                     <audio id="waterfall-aud">
                         <source src="audio/waterfall.mp3" type="audio/mp3">
@@ -210,7 +212,7 @@
             </div>
 
             <!-- MEDITATION -->
-            <div class="col-auto sound-icon">
+            <div class="col-auto sound-icon" id="meditate-card">
                 <button onclick="play(meditate);">
                     <audio id="meditate-aud">
                         <source src="audio/meditation.mp3" type="audio/mp3">
@@ -236,7 +238,7 @@
     </div>
 
     <!-- todo PLAY PAUSE BUTTON -->
-    
+
 
 
     <!-- JS -->

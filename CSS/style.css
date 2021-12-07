@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
 
 body {
-  background: linear-gradient(-45deg,  #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #19b893, #069271,#9d60ff, #f869fd );
 
   background-size: 400% 400%;
-  /* animation: gradient 8s ease infinite; */
+  animation: gradient 5s ease infinite;
   /* height: 100vh; */
   font-family: "Poppins", sans-serif;
 }
@@ -45,7 +45,7 @@ header h4 {
   /* background-color: blue; */
 }
 .sound-icon {
-  background: rgba(200, 200, 200, .4);
+  background: rgba(200, 200, 200, .2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
