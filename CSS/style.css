@@ -4,6 +4,7 @@
 
 body {
   background: linear-gradient(-45deg, #19b893, #069271,#9d60ff, #f869fd );
+  /* background-color: #19b893; */
 
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
@@ -52,8 +53,8 @@ header h4 {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   margin: 20px;
-  /* justify-content: center; */
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
 }
 .sound-icon img {
   width: 100px;
@@ -71,12 +72,6 @@ button{
   text-decoration: underline;
 }
 #credit-id{
-  text-align: center;
-}
-
-.play-btn{
-  background-color: red;
-  margin: 0;
   text-align: center;
 }
 
