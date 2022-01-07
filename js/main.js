@@ -61,3 +61,9 @@ function changeVol(volumeAmount, audioElem){
 //     toggle = !toggle;
 
 // }
+let toggle = true;
+function changeCardColor(id){
+    const elem = document.getElementById(id);
+    elem.style.backgroundColor = toggle ? "rgba(255,255,255,1 )" : "rgba(255,255,255,.2)";
+    toggle = !toggle;
+}
