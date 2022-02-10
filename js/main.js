@@ -27,9 +27,16 @@ function changeVol(volumeAmount, audioElem){
     audObj.volume = volumeAmount;
 }
 
-let toggle = true;
+// let toggle = true;
+// function changeCardColor(id){
+//     const elem = document.getElementById(id);
+//     elem.style.backgroundColor = toggle ? "rgba(255,255,255,.8)" : "rgba(255,255,255,.2)";
+//     toggle = !toggle;
+//     alert(id);
+// }
+
 function changeCardColor(id){
-    const elem = document.getElementById(id);
-    elem.style.backgroundColor = toggle ? "rgba(255,255,255,.8)" : "rgba(255,255,255,.2)";
-    toggle = !toggle;
+    var divElem = document.getElementById(id);
+    console.log(id);
+    divElem.classList.toggle("active-div");
 }
